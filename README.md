@@ -2,7 +2,7 @@
 
 AuditOps is a lightweight solution for operational auditing and log management, with Logstash as its core component.
 
-# Deployment Diagram
+## Deployment Diagram
 A pre-configured Docker Compose setup deploying three tools: Logstash, alongside Elasticsearch and Kibana for testing purposes, is provided.
 
 * Elasticsearch: Centralized data storage and search (accessible at http://elasticsearch:9200).
@@ -15,7 +15,7 @@ graph LR
         A[Logstash] --- B[Elasticsearch<br>Port: 9200] --- C[Kibana<br>Port: 5601]
     end
 ```
-# Setup
+## Setup
 
 Steps to follow:
 1. Run `docker compose up -d` or `docker compose up` (for debugging)
